@@ -116,7 +116,9 @@ export default function Footer(props) {
             </li>
           </ul>
           <ul className="footer-list">
-            <h3 className="footer-list__title"></h3>
+            <h3 className="footer-list__title">
+              <span className="footer-list__hiden-title">Hiden</span>
+            </h3>
             <li className="footer-list__item">
               <a href="#" className="footer-list__item-link">
                 Кейсы
