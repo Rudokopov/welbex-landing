@@ -1,6 +1,8 @@
 import "./Content.css";
+import React from "react";
 
-export default function Content() {
+export default function Content(props) {
+  const { isMobile } = props;
   return (
     <section className="content-container">
       <div className="content-left-side">
@@ -27,33 +29,66 @@ export default function Content() {
           </span>{" "}
           мы дарим:
         </h2>
-        <ul className="content-right-side__list-container">
-          <li className="list-container-item">
-            <h3 className="list-container-item__title">Виджеты</h3>
-            <p className="list-container-item__description">
-              30 готовых <br /> решений
-            </p>
-          </li>
-          <li className="list-container-item">
-            <h3 className="list-container-item__title">Dashboard</h3>
-            <p className="list-container-item__description">
-              c показателями <br /> вашего бизнеса
-            </p>
-          </li>
-          <li className="list-container-item">
-            <h3 className="list-container-item__title">Skype Аудит</h3>
-            <p className="list-container-item__description">
-              отдела продаж <br /> и CRM системы
-            </p>
-          </li>
-          <li className="list-container-item">
-            <h3 className="list-container-item__title">35 дней</h3>
-            <p className="list-container-item__description">
-              использования <br /> CRM
-            </p>
-          </li>
-        </ul>
-        <button className="content-button">Получить консультацию</button>
+        {isMobile ? (
+          <>
+            <ul className="content-right-side__list-container">
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">Виджеты</h3>
+                <p className="list-container-item__description">
+                  30 готовых <br /> решений
+                </p>
+              </li>
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">Dashboard</h3>
+                <p className="list-container-item__description">
+                  c показателями <br /> вашего бизнеса
+                </p>
+              </li>
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">Skype Аудит</h3>
+                <p className="list-container-item__description">
+                  отдела продаж <br /> и CRM системы
+                </p>
+              </li>
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">35 дней</h3>
+                <p className="list-container-item__description">
+                  использования <br /> CRM
+                </p>
+              </li>
+            </ul>
+            <button className="content-button">Получить консультацию</button>{" "}
+          </>
+        ) : (
+          <>
+            <ul className="content-right-side__list-container">
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">
+                  <span className="list-container-item__title-line">–</span>{" "}
+                  Skype Аудит
+                </h3>
+              </li>
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">
+                  <span className="list-container-item__title-line">–</span>{" "}
+                  Dashboard
+                </h3>
+              </li>
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">
+                  <span className="list-container-item__title-line">–</span> 30
+                  Виджетов
+                </h3>
+              </li>
+              <li className="list-container-item">
+                <h3 className="list-container-item__title">
+                  <span className="list-container-item__title-line">–</span>{" "}
+                  месяц amocrm
+                </h3>
+              </li>
+            </ul>
+          </>
+        )}
       </div>
     </section>
   );

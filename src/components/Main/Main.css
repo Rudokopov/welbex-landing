@@ -3,6 +3,7 @@
 
 .main {
   max-width: 1440px;
+  min-width: 320px;
   z-index: 3;
   margin: 0 auto;
   padding: 0 50px;
@@ -40,10 +41,22 @@
 }
 
 .background__red-ball_lolly {
+  position: absolute;
+  border-radius: 50%;
   width: 28px;
   height: 28px;
   top: 490px;
   left: 900px;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+  z-index: -5;
 }
 
 .background__purple-light {
@@ -76,4 +89,29 @@
   box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
   filter: blur(5px);
   backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width: 799px) {
+  .main {
+    padding: 0;
+  }
+  .background__purple-light {
+    top: 150px;
+    left: 300px;
+  }
+  .background__red-light {
+    top: 150px;
+    left: -200px;
+  }
+  .background__red-ball_lolly {
+    top: 455px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    filter: blur(5px);
+  }
+  .background__purple-ball {
+    top: 300px;
+    left: 320px;
+  }
 }
