@@ -8,6 +8,7 @@
   margin: 0 auto;
   padding: 0 50px;
   position: relative;
+  overflow: hidden;
 }
 .background__red-light {
   position: absolute;
