@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/welbex-landing/static/css/main.28b54a91.css",
-    "main.js": "/welbex-landing/static/js/main.e1475520.js",
+    "main.css": "/welbex-landing/static/css/main.06987fcc.css",
+    "main.js": "/welbex-landing/static/js/main.a8577f80.js",
     "static/media/Inter-Black.ttf": "/welbex-landing/static/media/Inter-Black.4687db66d316ec27374b.ttf",
     "static/media/Inter-Bold.ttf": "/welbex-landing/static/media/Inter-Bold.9aab1ebe6bd16660e37e.ttf",
     "static/media/Inter-Medium.ttf": "/welbex-landing/static/media/Inter-Medium.9d1fd4235eeb376c5f96.ttf",
     "static/media/Inter-Regular.ttf": "/welbex-landing/static/media/Inter-Regular.b559a93b35af397f4b6f.ttf",
     "static/media/Montserrat-Regular.ttf": "/welbex-landing/static/media/Montserrat-Regular.94bb495fba6077f669ed.ttf",
     "index.html": "/welbex-landing/index.html",
-    "main.28b54a91.css.map": "/welbex-landing/static/css/main.28b54a91.css.map",
-    "main.e1475520.js.map": "/welbex-landing/static/js/main.e1475520.js.map"
+    "main.06987fcc.css.map": "/welbex-landing/static/css/main.06987fcc.css.map",
+    "main.a8577f80.js.map": "/welbex-landing/static/js/main.a8577f80.js.map"
   },
   "entrypoints": [
-    "static/css/main.28b54a91.css",
-    "static/js/main.e1475520.js"
+    "static/css/main.06987fcc.css",
+    "static/js/main.a8577f80.js"
   ]
 }
