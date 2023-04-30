@@ -1,0 +1,79 @@
+@import url(../../vendor/fonts/Inter/Inter.css);
+@import url(../../vendor/fonts/Montserrat/Montserrat.css);
+
+.main {
+  max-width: 1440px;
+  z-index: 3;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+}
+.background__red-light {
+  position: absolute;
+  top: 251px;
+  left: -102px;
+  z-index: -5;
+  width: 311px;
+  height: 311px;
+  background-color: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.background__red-ball {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  top: 30px;
+  left: 600px;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+  z-index: -5;
+}
+
+.background__red-ball_lolly {
+  width: 28px;
+  height: 28px;
+  top: 490px;
+  left: 900px;
+}
+
+.background__purple-light {
+  z-index: -5;
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  top: -200px;
+  left: 700px;
+  background-color: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.background__purple-ball {
+  z-index: -5;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -60px;
+  left: 950px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.208) 78.59%,
+    rgba(86, 24, 128, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}

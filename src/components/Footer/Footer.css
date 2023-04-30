@@ -1,0 +1,60 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter";
+  color: var(--main-tx-color);
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-list_last {
+  text-align: right;
+}
+
+.footer-list__title {
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656566;
+}
+
+.footer-list__item {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.footer-list_last-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-list_last-description {
+  margin: 70px 0 0 0;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.footer-list_last-link {
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: underline;
+}
+
+.footer-list__item-link {
+  all: unset;
+  cursor: pointer;
+}
+
+.footer-list__item-link:not(:last-child) {
+  margin-right: 14px;
+}
