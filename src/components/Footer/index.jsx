@@ -1,8 +1,4 @@
-import "./Footer.css";
-// Desktop icons
-import TelegramIcon from "../../images/icons/telegram.png";
-import PhoneIcon from "../../images/icons/phone.png";
-import WhatsappIcon from "../../images/icons/whatsapp.png";
+import "./index.css";
 
 //Mobile icons
 import TelegramIconMob from "../../images/icons/mob/Telegram_mob.png";

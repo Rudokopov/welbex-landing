@@ -1,9 +1,9 @@
-import Header from "../Header/Header";
+import Header from "../Header/index";
 import React from "react";
 import { useResize } from "../../tools/useResize/useResize";
-import "./Main.css";
-import Content from "../Content/Content";
-import Footer from "../Footer/Footer";
+import "./index.css";
+import Content from "../Content/index";
+import Footer from "../Footer/index";
 
 export default function Main() {
   const screenChecker = useResize();

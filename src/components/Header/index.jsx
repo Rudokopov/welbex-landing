@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./index.css";
 import Logo from "../../images/icons/logo_welbex.png";
 import TelegramIcon from "../../images/icons/telegram.png";
 import PhoneIcon from "../../images/icons/phone.png";
