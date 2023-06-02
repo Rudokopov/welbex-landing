@@ -5,9 +5,9 @@ import "./index.css";
 import Content from "../Content/index";
 import Footer from "../Footer/index";
 
-export default function Main() {
+const Main: React.FC = () => {
   const screenChecker = useResize();
-  const isMobile = screenChecker.isScreenLg;
+  const isMobile: boolean = screenChecker.isScreenLg;
   return (
     <div className="main">
       <div className="background__red-light"></div>
@@ -20,4 +20,6 @@ export default function Main() {
       <Footer isMobile={isMobile} />
     </div>
   );
-}
+};
+
+export default Main;

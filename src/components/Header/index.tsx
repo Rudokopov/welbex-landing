@@ -5,7 +5,11 @@ import TelegramIcon from "../../images/icons/telegram.png";
 import PhoneIcon from "../../images/icons/phone.png";
 import WhatsappIcon from "../../images/icons/whatsapp.png";
 
-export default function Header(props) {
+type HeaderProps = {
+  isMobile: boolean;
+};
+
+const Header: React.FC<HeaderProps> = (props) => {
   const { isMobile } = props;
   return (
     <section className="header-container">
@@ -71,4 +75,6 @@ export default function Header(props) {
       )}
     </section>
   );
-}
+};
+
+export default Header;

@@ -1,7 +1,11 @@
 import "./index.css";
 import React from "react";
 
-export default function Content(props) {
+type ContentProps = {
+  isMobile: boolean;
+};
+
+const Content: React.FC<ContentProps> = (props) => {
   const { isMobile } = props;
   return (
     <section className="content-container">
@@ -92,4 +96,6 @@ export default function Content(props) {
       </div>
     </section>
   );
-}
+};
+
+export default Content;

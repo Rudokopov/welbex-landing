@@ -7,12 +7,20 @@ import {
   SCREEN_XXL,
 } from "./const-breakpoints";
 
-export const useResize = () => {
+interface ResizeHookResult {
+  width: number;
+  isScreenSm: boolean;
+  isScreenMd: boolean;
+  isScreenLg: boolean;
+  isScreenXxl: boolean;
+}
+
+export const useResize = (): ResizeHookResult => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleResize = (event) => {
-      setWidth(event.target.innerWidth);
+    const handleResize = (): void => {
+      setWidth(window.innerWidth);
     };
     window.addEventListener("resize", handleResize);
     return () => {

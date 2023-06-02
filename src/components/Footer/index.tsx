@@ -1,3 +1,4 @@
+import React from "react";
 import "./index.css";
 
 //Mobile icons
@@ -5,7 +6,11 @@ import TelegramIconMob from "../../images/icons/mob/Telegram_mob.png";
 import PhoneIconMob from "../../images/icons/mob/Phone_mob.png";
 import WhatsappIconMob from "../../images/icons/mob/Whatsapp_mob.png";
 
-export default function Footer(props) {
+type FooterProps = {
+  isMobile: boolean;
+};
+
+const Footer: React.FC<FooterProps> = (props) => {
   const { isMobile } = props;
   return (
     <section className="footer-container">
@@ -181,4 +186,6 @@ export default function Footer(props) {
       </ul>
     </section>
   );
-}
+};
+
+export default Footer;
