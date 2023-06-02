@@ -2,6 +2,7 @@
   "name": "welbex-landing",
   "homepage": "https://rudokopov.github.io/welbex-landing/",
   "version": "0.1.0",
+  "author": "Pavel Uzuniants",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
